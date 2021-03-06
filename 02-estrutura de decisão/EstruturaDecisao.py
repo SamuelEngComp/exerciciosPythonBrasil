@@ -1,9 +1,9 @@
 # =============================================================================
-# Exercicios de estrutura de decis√£o - Site Python Brasil
+# Exercicios de estrutura de decis√É¬£o - Site Python Brasil
 # =============================================================================
 
 # =============================================================================
-# 01 - Fa√ßa um Programa que pe√ßa dois n√∫meros e 
+# 01 - Fa√É¬ßa um Programa que pe√É¬ßa dois n√É¬∫meros e 
 # imprima o maior deles.
 # =============================================================================
 
@@ -29,8 +29,8 @@ else:
     
     
 # =============================================================================
-# 02 - FaÁa um Programa que peÁa um valor e mostre na tela 
-# se o valor È positivo ou negativo
+# 02 - Fa√ßa um Programa que pe√ßa um valor e mostre na tela 
+# se o valor √© positivo ou negativo
 # =============================================================================
 
 numeroPositivo = float(input("Dgite um numero: "))
@@ -41,9 +41,9 @@ else:
     
 
 # =============================================================================
-# 03 - FaÁa um Programa que verifique se uma letra 
-# digitada È "F" ou "M". Conforme a letra escrever: 
-#   F - Feminino, M - Masculino, Sexo Inv·lido
+# 03 - Fa√ßa um Programa que verifique se uma letra 
+# digitada √© "F" ou "M". Conforme a letra escrever: 
+#   F - Feminino, M - Masculino, Sexo Inv√°lido
 # =============================================================================
 
 letraDigitada = input("Digite uma letra: ")
@@ -60,8 +60,8 @@ else:
 
 
 # =============================================================================
-# 04 - FaÁa um Programa que verifique se uma letra 
-#      digitada È vogal ou consoante.
+# 04 - Fa√ßa um Programa que verifique se uma letra 
+#      digitada √© vogal ou consoante.
 # =============================================================================
 
 vogais = ['a','e','i','o','u']
@@ -77,11 +77,11 @@ else:
     print("eh um numero ")
     
 # =============================================================================
-# 05 - FaÁa um programa para a leitura de duas notas parciais de um aluno. 
-# O programa deve calcular a mÈdia alcanÁada por aluno e apresentar:
-#   *A mensagem "Aprovado", se a mÈdia alcanÁada for maior ou igual a sete;   
-#   *A mensagem "Reprovado", se a mÈdia for menor do que sete;
-#   *A mensagem "Aprovado com DistinÁ„o", se a mÈdia for igual a dez.
+# 05 - Fa√ßa um programa para a leitura de duas notas parciais de um aluno. 
+# O programa deve calcular a m√©dia alcan√ßada por aluno e apresentar:
+#   *A mensagem "Aprovado", se a m√©dia alcan√ßada for maior ou igual a sete;   
+#   *A mensagem "Reprovado", se a m√©dia for menor do que sete;
+#   *A mensagem "Aprovado com Distin√ß√£o", se a m√©dia for igual a dez.
 # =============================================================================
 
 nota01 = float(input("Digite a primeira nota: "))
@@ -92,10 +92,10 @@ if media >= 7.0 and media < 10.0:
 elif media < 7.0:
     print("Reprovado")
 elif media == 10:
-    print("Aprovado com DistinÁ„o")
+    print("Aprovado com Distin√ß√£o")
     
 # =============================================================================
-# 06 - FaÁa um Programa que leia trÍs n˙meros e mostre o maior deles.
+# 06 - Fa√ßa um Programa que leia tr√™s n√∫meros e mostre o maior deles.
 # =============================================================================
 
 numero01 = float(input("digite o primeiro numero: "))
@@ -114,7 +114,7 @@ if (numero03 > numero02 and numero02 > numero01) or (numero03 > numero01 and num
     print("numero: ", numero03, " eh maior")
 
 # =============================================================================
-# 07 - FaÁa um Programa que leia trÍs n˙meros e mostre o maior e o menor deles
+# 07 - Fa√ßa um Programa que leia tr√™s n√∫meros e mostre o maior e o menor deles
 # =============================================================================
 
 numero01 = float(input("digite o primeiro numero: "))
@@ -148,8 +148,8 @@ if (numero03 > numero01 and numero01 > numero02):
 
 
 # =============================================================================
-# 08 - FaÁa um programa que pergunte o preÁo de trÍs produtos e informe qual produto 
-# vocÍ deve comprar, sabendo que a decis„o È sempre pelo mais barato.
+# 08 - Fa√ßa um programa que pergunte o pre√ßo de tr√™s produtos e informe qual produto 
+# voc√™ deve comprar, sabendo que a decis√£o √© sempre pelo mais barato.
 # =============================================================================
 
 preco1 = float(input("digite o preco 1: "))
@@ -180,7 +180,7 @@ if (preco3 > preco1 and preco1 > preco2):
     print("Produto mais barato: ", preco2)
 
 # =============================================================================
-# 09 - FaÁa um Programa que leia trÍs n˙meros e mostre-os em ordem decrescente
+# 09 - Fa√ßa um Programa que leia tr√™s n√∫meros e mostre-os em ordem decrescente
 # =============================================================================
 
 preco1 = float(input("digite o preco 1: "))
@@ -239,9 +239,9 @@ if (preco3 > preco1 and preco1 > preco2):
     print("Ordem Decrescente: ", ordemDecrescente)
 
 # =============================================================================
-# 10 - FaÁa um Programa que pergunte em que turno vocÍ estuda. 
-#    PeÁa para digitar M-matutino ou V-Vespertino ou N- Noturno. 
-#   Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inv·lido!", conforme o caso.
+# 10 - Fa√ßa um Programa que pergunte em que turno voc√™ estuda. 
+#    Pe√ßa para digitar M-matutino ou V-Vespertino ou N- Noturno. 
+#   Imprima a mensagem "Bom Dia!", "Boa Tarde!" ou "Boa Noite!" ou "Valor Inv√°lido!", conforme o caso.
 # =============================================================================
 
 print("Digite o turno que vc estuda ")
@@ -260,19 +260,19 @@ else:
     
     
 # =============================================================================
-# 11 - As OrganizaÁıes Tabajara resolveram dar um aumento de sal·rio aos seus 
-# colaboradores e lhe contraram para desenvolver o programa que calcular· os reajustes.
+# 11 - As Organiza√ß√µes Tabajara resolveram dar um aumento de sal√°rio aos seus 
+# colaboradores e lhe contraram para desenvolver o programa que calcular√° os reajustes.
 #       
-#        FaÁa um programa que recebe o sal·rio de um colaborador e o reajuste segundo 
-#        o seguinte critÈrio, baseado no sal·rio atual:
-#    a) sal·rios atÈ R$ 280,00 (incluindo) : aumento de 20%
-#    b) sal·rios entre R$ 280,00 e R$ 700,00 : aumento de 15%
-#    c) sal·rios entre R$ 700,00 e R$ 1500,00 : aumento de 10%
-#    d) sal·rios de R$ 1500,00 em diante : aumento de 5% ApÛs o aumento ser realizado, informe na tela:
-    #    1) o sal·rio antes do reajuste;
+#        Fa√ßa um programa que recebe o sal√°rio de um colaborador e o reajuste segundo 
+#        o seguinte crit√©rio, baseado no sal√°rio atual:
+#    a) sal√°rios at√© R$ 280,00 (incluindo) : aumento de 20%
+#    b) sal√°rios entre R$ 280,00 e R$ 700,00 : aumento de 15%
+#    c) sal√°rios entre R$ 700,00 e R$ 1500,00 : aumento de 10%
+#    d) sal√°rios de R$ 1500,00 em diante : aumento de 5% Ap√≥s o aumento ser realizado, informe na tela:
+    #    1) o sal√°rio antes do reajuste;
     #    2) o percentual de aumento aplicado;
     #    3) o valor do aumento;
-    #    4) o novo sal·rio, apÛs o aumento.
+    #    4) o novo sal√°rio, ap√≥s o aumento.
 # =============================================================================
 
 salarioDoFuncionario = float(input("Digite o salario: "))
@@ -295,50 +295,130 @@ elif salarioDoFuncionario >= 1500.00:
     print("Novo Salario apos aumento = R$ ", salarioDoFuncionario*1.05)
 
 # =============================================================================
-# 12 - QUEST√O
+# 12 - QUEST√ÉO
 # =============================================================================
 """
-FaÁa um programa para o c·lculo de uma folha de pagamento, sabendo que os descontos s„o do Imposto de Renda, 
-que depende do sal·rio bruto (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% 
-do Sal·rio Bruto, mas n„o È descontado (È a empresa que deposita). O Sal·rio LÌquido corresponde ao Sal·rio 
-Bruto menos os descontos. O programa dever· pedir ao usu·rio o valor da sua hora e a quantidade de horas 
-trabalhadas no mÍs.
+Fa√ßa um programa para o c√°lculo de uma folha de pagamento, sabendo que os descontos s√£o do Imposto de Renda, 
+que depende do sal√°rio bruto (conforme tabela abaixo) e 3% para o Sindicato e que o FGTS corresponde a 11% 
+do Sal√°rio Bruto, mas n√£o √© descontado (√© a empresa que deposita). O Sal√°rio L√≠quido corresponde ao Sal√°rio 
+Bruto menos os descontos. O programa dever√° pedir ao usu√°rio o valor da sua hora e a quantidade de horas 
+trabalhadas no m√™s.
 
 Desconto do IR:
     
-Sal·rio Bruto atÈ 900 (inclusive) - isento
-Sal·rio Bruto atÈ 1500 (inclusive) - desconto de 5%
-Sal·rio Bruto atÈ 2500 (inclusive) - desconto de 10%
-Sal·rio Bruto acima de 2500 - desconto de 20% Imprima na tela as informaÁıes, dispostas conforme o exemplo abaixo. 
-No exemplo o valor da hora È 5 e a quantidade de hora È 220.
+Sal√°rio Bruto at√© 900 (inclusive) - isento
+Sal√°rio Bruto at√© 1500 (inclusive) - desconto de 5%
+Sal√°rio Bruto at√© 2500 (inclusive) - desconto de 10%
+Sal√°rio Bruto acima de 2500 - desconto de 20% Imprima na tela as informa√ß√µes, dispostas conforme o exemplo abaixo. 
+No exemplo o valor da hora √© 5 e a quantidade de hora √© 220.
 
-        Sal·rio Bruto: (5 * 220)        : R$ 1100,00
+        Sal√°rio Bruto: (5 * 220)        : R$ 1100,00
         (-) IR (5%)                     : R$   55,00  
         (-) INSS ( 10%)                 : R$  110,00
         FGTS (11%)                      : R$  121,00
         Total de descontos              : R$  165,00
-        Sal·rio Liquido                 : R$  935,00
+        Sal√°rio Liquido                 : R$  935,00
 
 """
 
 valorPorHora = float(input("digite o valor q vc ganha por HORA: "))
 numeroHorasTrabalhadasPorMes = float(input("digite o numero de horas trabalhadas por mes: "))
 
-#considerando o mÍs com 30 dias
-#cosiderando o dia 24h e o mÍs 720h
+#considerando o m√™s com 30 dias
+#cosiderando o dia 24h e o m√™s 720h
 salarioNoMes = numeroHorasTrabalhadasPorMes*valorPorHora
 
-print("Salario no mÍs: ", salarioNoMes)
+print("Salario no m√™s: ", salarioNoMes)
 
 
+descontoSindicato = 0.03
+descontoFGTS = 0.11
+descontoINSS = 0.10
+
+if salarioNoMes <= 900:
+    print("Funcionario Isento")
+elif salarioNoMes > 900 and salarioNoMes <= 1500:
+    salarioLiquido = salarioNoMes - (salarioNoMes*0.05) - (salarioNoMes*0.10)
+    print("Salario Bruto = R$ ", salarioNoMes)
+    print("IR ( 5% ) = R$ ", salarioNoMes*0.05)
+    print("INSS ( 10% ) = R$ ", salarioNoMes*0.10)
+    print("FGTS ( 11% ) = R$ ", salarioNoMes*0.11)
+    print("Total de descontos = R$ ", (salarioNoMes*0.05)+(salarioNoMes*0.10))
+    print("Salario liquido = R$ ", salarioLiquido)
+elif salarioNoMes > 1500 and salarioNoMes <= 2500:
+    salarioLiquido = salarioNoMes - (salarioNoMes*0.10) - (salarioNoMes*0.10)
+    print("Salario Bruto = R$ ", salarioNoMes)
+    print("IR ( 10% ) = R$ ", salarioNoMes*0.10)
+    print("INSS ( 10% ) = R$ ", salarioNoMes*0.10)
+    print("FGTS ( 11% ) = R$ ", salarioNoMes*0.11)
+    print("Total de descontos = R$ ", (salarioNoMes*0.10)+(salarioNoMes*0.10))
+    print("Salario liquido = R$ ", salarioLiquido)
+elif salarioNoMes > 2500:
+    salarioLiquido = salarioNoMes - (salarioNoMes*0.20) - (salarioNoMes*0.10)
+    print("Salario Bruto = R$ ", salarioNoMes)
+    print("IR ( 20% ) = R$ ", salarioNoMes*0.20)
+    print("INSS ( 10% ) = R$ ", salarioNoMes*0.10)
+    print("FGTS ( 11% ) = R$ ", salarioNoMes*0.11)
+    print("Total de descontos = R$ ", (salarioNoMes*0.20)+(salarioNoMes*0.10))
+    print("Salario liquido = R$ ", salarioLiquido)
 
 
+# =============================================================================
+# 13 - Fa√ßa um Programa que leia um n√∫mero e exiba o dia correspondente da semana. 
+#    (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inv√°lido
+# =============================================================================
+    
+diaSemana = int(input("Digite um numero entre 1 e 7: "))
 
+##utilizando dicionario
+semana = {1:"domingo",
+          2:"segunda",
+          3:"terca",
+          4:"quarta",
+          5:"quinta",
+          6:"sexta",
+          7:"sabado"}
+semana.get(diaSemana)
+    
 
+#UTILIZANDO IF 
 
+if diaSemana == 1:
+    print("Domingo")
+elif diaSemana == 2:
+    print("Segunda")
+elif diaSemana == 3:
+    print("Terca-feira")
+elif diaSemana == 4:
+    print("Quarta-feira")
+elif diaSemana == 5:
+    print("Quinta-feira")
+elif diaSemana == 6:
+    print("Sexta-feira")
+elif diaSemana == 7:
+    print("Sabado")
+else:
+    print("Digito invalido")
+    
 
+# =============================================================================
+# 14 - QUEST√ÉO
+# =============================================================================
 
+"""
+Fa√ßa um programa que l√™ as duas notas parciais obtidas por um aluno numa disciplina ao longo de um 
+semestre, e calcule a sua m√©dia. A atribui√ß√£o de conceitos obedece √† tabela abaixo:
+  
+  M√©dia de Aproveitamento  Conceito
+  Entre 9.0 e 10.0        A
+  Entre 7.5 e 9.0         B
+  Entre 6.0 e 7.5         C
+  Entre 4.0 e 6.0         D
+  Entre 4.0 e zero        E
 
+O algoritmo deve mostrar na tela as notas, a m√©dia, o conceito correspondente e a mensagem ‚ÄúAPROVADO‚Äù 
+se o conceito for A, B ou C ou ‚ÄúREPROVADO‚Äù se o conceito for D ou E.
+"""
 
 
 
