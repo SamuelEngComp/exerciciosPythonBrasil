@@ -421,19 +421,108 @@ se o conceito for A, B ou C ou “REPROVADO” se o conceito for D ou E.
 """
 
 
+nota1 = float(input("Digite a nota 1: "))
+nota2 = float(input("Digite a nota 2: "))
+media = (nota1+nota2)/2
+#np.arange(9.0,10.0,0.025)
+"""mediaAproveitamentoConceito = {np.arange(9.0, 10.0, 0.025) : {"A":"APR"},
+                               np.arange(7.5, 9.0, 0.025) : {"B":"APR"},
+                               np.arange(6.0, 7.5, 0.025) : {"C":"APR"},
+                               np.arange(4.0, 6.0, 0.025) : {"D":"REP"},
+                               np.arange(0.0, 4.0, 0.025) : {"E":"REP"}}
+mediaAproveitamentoConceito.get(media)"""
+
+if media >= 9.0 and media <= 10.0:
+    print("Media: ", media)
+    print("Conceito: A")
+    print("Aprovado")
+elif media >= 7.5 and media < 9.0:
+    print("Media: ", media)
+    print("Conceito: B")
+    print("Aprovado")
+elif media >= 6.0 and media < 7.5:
+    print("Media: ", media)
+    print("Conceito: C")
+    print("Aprovado")
+elif media >= 4.0 and media < 6.0:
+    print("Media: ", media)
+    print("Conceito: D")
+    print("Reprovado")
+elif media > 0 and media < 4.0:
+    print("Media: ", media)
+    print("Conceito: E")
+    print("Reprovado")
 
 
+# =============================================================================
+# 15 - Faça um Programa que peça os 3 lados de um triângulo. O programa deverá 
+# informar se os valores podem ser um triângulo. Indique, caso os lados formem um 
+# triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
+# =============================================================================
+
+"""
+Dicas:
+Três lados formam um triângulo quando a soma de quaisquer dois lados for maior que o terceiro;
+Triângulo Equilátero: três lados iguais;
+Triângulo Isósceles: quaisquer dois lados iguais;
+Triângulo Escaleno: três lados diferentes;
+"""
+lado1 = float(input("Digite o lado 1 do triangulo: "))
+lado2 = float(input("Digite o lado 2 do triangulo: "))
+lado3 = float(input("Digite o lado 3 do triangulo: "))
+
+def tipoTriangulo(lado1, lado2, lado3):
+    if lado1 == lado2 == lado3:
+        print("Triangulo equilatero")
+    elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
+        print("Triangulo isosceles")
+    elif lado1 != lado2 and lado1 != lado3 and lado2 != lado3:
+        print("Triangulo escaleno")
+
+if (lado1+lado2) > lado3:
+    tipoTriangulo(lado1, lado2, lado3)
+else:
+    print("Nao podem ser um triangulo")
 
 
+# =============================================================================
+# 16 - QUESTAO
+# =============================================================================
+        
+"""
+Faça um programa que calcule as raízes de uma equação do segundo grau, na forma ax2 + bx + c. 
+O programa deverá pedir os valores de a, b e c e fazer as consistências, 
+informando ao usuário nas seguintes situações:
+
+A)  Se o usuário informar o valor de A igual a zero, a equação não é do segundo grau e o programa não 
+    deve fazer pedir os demais valores, sendo encerrado;
+B)  Se o delta calculado for negativo, a equação não possui raizes reais. Informe ao usuário e encerre o programa;
+C)  Se o delta calculado for igual a zero a equação possui apenas uma raiz real; informe-a ao usuário;
+D)  Se o delta for positivo, a equação possui duas raiz reais; informe-as ao usuário;
+
+"""
+
+import math
 
 
-
-
-
-
-
-
-
+valorDeA = float(input("Digite o valor de A: "))
+if valorDeA == 0:
+    print("A equacao nao eh do segundo grau")
+else:
+    valorDeB = float(input("Digite o valor de B: "))
+    valorDeC = float(input("Digite o valor de C: "))
+    delta = valorDeB**2 - 4*valorDeA*valorDeC
+    if delta < 0:
+        print("A equacao nao possui raizes reais")
+    elif delta == 0:
+        print("A equacao possui apenas uma raiz real")
+        raiz = - valorDeB/ 2 * valorDeA
+        print("Raiz: ", raiz)
+    else:
+        print("A equacao possui duas raizes reais")
+        raiz1 = (-valorDeB + math.sqrt(delta))/2 * valorDeA
+        raiz2 = (-valorDeB - math.sqrt(delta))/2 * valorDeA
+        print("Raizes X1 = ", raiz1, " Raizes X2 = ", raiz2)
 
 
 
