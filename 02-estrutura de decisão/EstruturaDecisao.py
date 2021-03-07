@@ -525,11 +525,24 @@ else:
         print("Raizes X1 = ", raiz1, " Raizes X2 = ", raiz2)
 
 
+# =============================================================================
+# 17 - Faça um Programa que peça um número correspondente a um determinado ano 
+# e em seguida informe se este ano é ou não bissexto
+# =============================================================================
 
+anoBissexto = int(input("Digite o ano: "))
 
+if anoBissexto % 100 != 0 and anoBissexto % 400 == 0:
+    print("O ANO EH BISSEXTO")
+elif anoBissexto % 4 == 0 :
+    print("Ano BISSEXTO")
+else:
+    print("O ANO NAO EH BISSEXTO")
+        
 
-
-
+# =============================================================================
+# 18 - Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida
+# =============================================================================
 
 
 
