@@ -544,32 +544,114 @@ else:
 # 18 - Faça um Programa que peça uma data no formato dd/mm/aaaa e determine se a mesma é uma data válida
 # =============================================================================
 
+dataDigitada = input("Digite uma data no formato dd/mm/aaaa ")
+dataDigitada.split("/")
+if int(dataDigitada[0:2]) > 0 and int(dataDigitada[0:2]) < 32:
+    if int(dataDigitada[3:5]) > 0 and int(dataDigitada[3:5]) < 13:
+        if int(dataDigitada[6:10]) > 1500 and int(dataDigitada[6:10]) < 9999:
+            print("data valida")
+        else:
+            print("data invalida")
+    else:
+        print("data invalida")
+else:
+    print("data invalida")
 
 
+# =============================================================================
+# 19 - QUESTAO
+# =============================================================================
+"""
+Faça um Programa que leia um número inteiro menor que 1000 e imprima a quantidade de centenas, 
+dezenas e unidades do mesmo.
+
+Observando os termos no plural a colocação do "e", da vírgula entre outros. 
+
+Exemplo:
+326 = 3 centenas, 2 dezenas e 6 unidades
+12 = 1 dezena e 2 unidades 
+
+Testar com: 326, 300, 100, 320, 310,305, 301, 101, 311, 111, 25, 20, 10, 21, 11, 1, 7 e 16
+"""
+
+numeroDigitado = int(input("Digite um numero que seja menor que 1000: "))
+if numeroDigitado < 1000:
+    if numeroDigitado < 10:
+        print(numeroDigitado, " = ", numeroDigitado, " unidades")
+    elif numeroDigitado >= 10 and numeroDigitado < 100:
+        numeroDezenas = int(numeroDigitado/10)
+        numeroUnidades = numeroDigitado - (numeroDezenas*10)
+        print(numeroDigitado, " = ", numeroDezenas, " dezenas", "e", numeroUnidades, " unidades")
+    elif numeroDigitado >= 100 and numeroDigitado < 1000:
+        numeroCentenas = int(numeroDigitado/100)
+        numeroDezenas = int((numeroDigitado - (numeroCentenas*100))/10)
+        numeroUnidades = int(numeroDigitado - (numeroDezenas*10) - (numeroCentenas*100))
+        print(numeroDigitado, " = ", numeroCentenas, "Centenas", 
+              numeroDezenas, " dezenas", "e", numeroUnidades, " unidades")
+else:
+    print("Numero superior a 1000")
 
 
+# =============================================================================
+# 20 - QUESTAO
+# =============================================================================
+"""
+Faça um Programa para leitura de três notas parciais de um aluno. 
+O programa deve calcular a média alcançada por aluno e presentar:
+
+A) A mensagem "Aprovado", se a média for maior ou igual a 7, com a respectiva média alcançada;
+B) A mensagem "Reprovado", se a média for menor do que 7, com a respectiva média alcançada;
+C) A mensagem "Aprovado com Distinção", se a média for igual a 10.
+"""
+
+nota1 = float(input('Digite a nota 1: '))
+nota2 = float(input('Digite a nota 2: '))
+nota3 = float(input('Digite a nota 3: '))
+
+media = (nota1 + nota2 + nota3)/3
+
+if media >= 7.0 and media < 10.0:
+    print(f'Aprovado com media = {media}')
+elif media == 10.0:
+    print(f'Aprovado com Distincao, media = {media}')
+else:
+    print(f'Reprovado, media = {media}')
 
 
+# =============================================================================
+# 21 - QUESTAO
+# =============================================================================
+"""
+Faça um Programa para um caixa eletrônico. O programa deverá perguntar ao usuário a 
+valor do saque e depois informar quantas notas de cada valor serão fornecidas. 
 
+As notas disponíveis serão as de 1, 5, 10, 50 e 100 reais. O valor mínimo é de 10 reais e o máximo de 600 reais. 
+O programa não deve se preocupar com a quantidade de notas existentes na máquina.
 
+Exemplo 1: Para sacar a quantia de 256 reais, o programa fornece duas notas de 100, 
+uma nota de 50, uma nota de 5 e uma nota de 1;
 
+Exemplo 2: Para sacar a quantia de 399 reais, o programa fornece três notas de 100, 
+uma nota de 50, quatro notas de 10, uma nota de 5 e quatro notas de 1.
+"""
 
+valorDeSaque = float(input("Dgite o valor de SAQUE: "))
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+if valorDeSaque <= 600 and valorDeSaque >= 10:
+    if valorDeSaque == 10:
+        print(valorDeSaque, " = ", valorDeSaque/valorDeSaque, " Nota")
+    elif numeroDigitado >= 10 and numeroDigitado < 100:
+        numeroDezenas = int(numeroDigitado/10)
+        numeroUnidades = numeroDigitado - (numeroDezenas*10)
+        print(numeroDigitado, " = ", numeroDezenas, " dezenas", "e", numeroUnidades, " unidades")
+    elif numeroDigitado >= 100 and numeroDigitado < 1000:
+        numeroCentenas = int(numeroDigitado/100)
+        numeroDezenas = int((numeroDigitado - (numeroCentenas*100))/10)
+        numeroUnidades = int(numeroDigitado - (numeroDezenas*10) - (numeroCentenas*100))
+        print(numeroDigitado, " = ", numeroCentenas, "Centenas", 
+              numeroDezenas, " dezenas", "e", numeroUnidades, " unidades")
+else:
+    print("Valor indisponivel no caixa eletronico")
 
 
 
